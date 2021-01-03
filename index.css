@@ -2,12 +2,16 @@ header .top {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 33px;
+
   width: 1200px;
 }
 
 header .top h1 a:first-child {
-  margin-right: 28px;
+  margin: 0 28px;
+}
+
+header .top h1 {
+  padding: 33px 0;
 }
 
 .icons {
@@ -18,7 +22,7 @@ header .top h1 a:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 28px;
+  padding: 31px 24px;
 }
 
 .control h2 {
@@ -47,11 +51,27 @@ header .top h1 a:first-child {
 }
 
 .control ul li button[class] {
-  padding: 0;
+  padding: 0; /*동그랗게 만들어주기*/
 }
 
 .icons .sns {
+  position: relative;
   display: flex;
+  padding: 27px 0 0 7px;
+}
+
+.icons .sns::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 1px;
+  height: 30px;
+  background-color: #e3e3e3;
+}
+
+.icons .sns li {
+  padding: 0 0 0 12px;
 }
 
 .icons .sns img {
