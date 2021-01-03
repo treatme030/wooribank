@@ -1,0 +1,59 @@
+header .top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 33px;
+  width: 1200px;
+}
+
+header .top h1 a:first-child {
+  margin-right: 28px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons .control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28px;
+}
+
+.control h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  padding-right: 9px;
+}
+
+.control ul {
+  display: flex;
+}
+
+.control li {
+  padding-left: 4px;
+}
+.control ul li button {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  background-color: white;
+  color: #3190ce;
+  border: 1px solid #dfdfdf;
+  border-radius: 36px;
+}
+
+.control ul li button[class] {
+  padding: 0;
+}
+
+.icons .sns {
+  display: flex;
+}
+
+.icons .sns img {
+  width: 46px;
+}
