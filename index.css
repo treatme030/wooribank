@@ -2,12 +2,11 @@ header .top {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-
   width: 1200px;
 }
 
 header .top h1 a:first-child {
-  margin: 0 28px;
+  margin: 0 28px 0 0;
 }
 
 header .top h1 {
@@ -76,4 +75,80 @@ header .top h1 {
 
 .icons .sns img {
   width: 46px;
+}
+
+.topb {
+  width: 1200px;
+  height: 60px;
+  padding: 0 150.5px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.topb nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.topb .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.topb .navbar li {
+  position: relative;
+}
+
+/*선 만들기*/
+.topb .navbar li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 1px;
+  height: 10px;
+  background: #e3e3e3;
+}
+
+/*a에 padding을 넣어서 텍스트 주변도 클릭되도록 함*/
+.topb .navbar li a {
+  position: relative;
+  font-size: 20px;
+  padding: 16px 40px;
+}
+
+.topb .login {
+  display: flex;
+  align-items: center;
+}
+
+.topb .login a {
+  position: relative;
+  line-height: 60px;
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+/*선 만들기*/
+.topb .login a ~ a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 1px;
+  height: 10px;
+  background: #e3e3e3;
+}
+
+.topb .login button {
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  background: none;
+  color: #277dbf;
 }
