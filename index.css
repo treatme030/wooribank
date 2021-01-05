@@ -197,6 +197,16 @@ header .top h1 {
   color: #e0e4f0;
 }
 
+.service .banner a {
+  display: block;
+  margin: 0 auto; /*block는 text-align으로 중앙정렬 불가*/
+  width: 140px;
+  line-height: 40px;
+  color: white;
+  background-color: #064ca2;
+  border-radius: 7px;
+}
+
 .service .banner .left {
   display: flex;
   text-align: center;
@@ -205,8 +215,8 @@ header .top h1 {
 
 .service .banner .left > div {
   width: 290px;
-  background-color: #89c0eb;
-}
+  background: linear-gradient(to right, #3194d5, #4fb2f6);
+} /*오른쪽 방향으로 그라데이션*/
 
 .service .banner .right {
   display: flex;
@@ -216,5 +226,5 @@ header .top h1 {
 
 .service .banner .right > div {
   width: 290px;
-  background-color: #354fa6;
+  background: linear-gradient(to right, #334da4, #3c62b3);
 }
