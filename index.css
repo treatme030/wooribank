@@ -179,6 +179,8 @@ header .top h1 {
 .service .banner {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  line-height: 1;
 }
 
 .service .banner h3 {
@@ -207,24 +209,22 @@ header .top h1 {
   border-radius: 7px;
 }
 
+.service .banner div div {
+  width: 290px;
+}
+
 .service .banner .left {
   display: flex;
-  text-align: center;
-  line-height: 1;
 }
 
 .service .banner .left > div {
-  width: 290px;
   background: linear-gradient(to right, #3194d5, #4fb2f6);
 } /*오른쪽 방향으로 그라데이션*/
 
 .service .banner .right {
   display: flex;
-  text-align: center;
-  line-height: 1;
 }
 
 .service .banner .right > div {
-  width: 290px;
   background: linear-gradient(to right, #334da4, #3c62b3);
 }
